@@ -1,0 +1,44 @@
+﻿.status-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  min-height: 26px;
+
+  padding: 4px 10px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+.status-chip--active,
+.status-chip--verified {
+  color: #27684d;
+  background: #d8f5e6;
+}
+
+.status-chip--pending {
+  color: #7a6324;
+  background: #fff2c5;
+}
+
+.status-chip--awaiting-response {
+  color: #925f0a;
+  background: #fff3d6;
+}
+
+.status-chip--unresponsive {
+  color: #b42318;
+  background: #fee4e2;
+}
+
+.status-chip--inactive {
+  color: #59616a;
+  background: #eff0f1;
+}

@@ -1,0 +1,636 @@
+﻿.volunteer-dashboard {
+  min-height: 100vh;
+  padding: 42px;
+  color: var(--color-text-primary);
+  background: var(--color-app-background);
+}
+
+.volunteer-dashboard__header {
+  max-width: 1240px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.volunteer-dashboard__eyebrow {
+  margin-bottom: 9px;
+  color: var(--color-primary);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.volunteer-dashboard__header h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.volunteer-dashboard__intro {
+  margin-top: 9px;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.volunteer-dashboard__account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.volunteer-dashboard__avatar,
+.volunteer-dashboard__profile-avatar {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.volunteer-dashboard__avatar {
+  width: 38px;
+  height: 38px;
+  font-size: 10px;
+}
+
+.volunteer-dashboard__account > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.volunteer-dashboard__account strong {
+  font-size: 10px;
+}
+
+.volunteer-dashboard__account span {
+  color: var(--color-text-muted);
+  font-size: 8px;
+}
+
+.volunteer-dashboard__account button {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 8px;
+  padding: 0 12px;
+  color: var(--color-text-secondary);
+  background: #fff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 7px;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.volunteer-dashboard__account button:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.volunteer-dashboard__summary {
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 16px;
+  margin: 30px auto 0;
+}
+
+.volunteer-dashboard__profile-card,
+.volunteer-dashboard-metric,
+.volunteer-dashboard__tasks,
+.volunteer-dashboard__identity-state {
+  background: #fff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.volunteer-dashboard__profile-card {
+  padding: 18px;
+}
+
+.volunteer-dashboard__profile-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.volunteer-dashboard__profile-avatar {
+  width: 43px;
+  height: 43px;
+  font-size: 10px;
+}
+
+.volunteer-dashboard__profile-heading > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.volunteer-dashboard__profile-heading strong {
+  font-size: 11px;
+}
+
+.volunteer-dashboard__profile-heading span {
+  color: var(--color-primary);
+  font-size: 8px;
+}
+
+.volunteer-dashboard__profile-stats {
+  display: grid;
+  gap: 9px;
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid var(--color-border-soft);
+}
+
+.volunteer-dashboard__profile-stats div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+}
+
+.volunteer-dashboard__profile-stats svg {
+  color: var(--color-primary);
+}
+
+.volunteer-dashboard__profile-stats span {
+  font-size: 9px;
+}
+
+.volunteer-dashboard__metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.volunteer-dashboard-metric {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px;
+}
+
+.volunteer-dashboard-metric__icon {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-radius: 50%;
+}
+
+.volunteer-dashboard-metric > div > span {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: 8px;
+}
+
+.volunteer-dashboard-metric strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 19px;
+}
+
+.volunteer-dashboard__tasks {
+  max-width: 1240px;
+  margin: 18px auto 0;
+  overflow: hidden;
+}
+
+.volunteer-dashboard__tasks > header {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 19px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.volunteer-dashboard__tasks h2 {
+  font-size: 13px;
+}
+
+.volunteer-dashboard__tasks header p {
+  margin-top: 5px;
+  color: var(--color-text-muted);
+  font-size: 8px;
+}
+
+.volunteer-dashboard__tasks header > span {
+  color: var(--color-text-secondary);
+  font-size: 9px;
+}
+
+.volunteer-dashboard__filters {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 13px 19px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.volunteer-dashboard__filters button {
+  min-height: 30px;
+  padding: 0 12px;
+  color: var(--color-text-secondary);
+  background: #fff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 999px;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.volunteer-dashboard__filters button.is-active {
+  color: #087a55;
+  background: #e7f8ef;
+  border-color: var(--color-primary);
+}
+
+.volunteer-task-table__header,
+.volunteer-task-table__row {
+  display: grid;
+  grid-template-columns:
+    minmax(210px, 1.5fr)
+    minmax(140px, 1fr)
+    110px
+    90px
+    105px
+    125px;
+  align-items: center;
+  column-gap: 15px;
+  padding: 0 19px;
+}
+
+.volunteer-task-table__header {
+  min-height: 39px;
+  color: var(--color-text-secondary);
+  background: #f6f7f7;
+  border-bottom: 1px solid var(--color-border-soft);
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.volunteer-task-table__row {
+  min-height: 67px;
+  border-bottom: 1px solid var(--color-border-soft);
+  font-size: 9px;
+}
+
+.volunteer-task-table__row:last-child {
+  border-bottom: 0;
+}
+
+.volunteer-task-table__row > div strong {
+  display: block;
+  font-size: 10px;
+}
+
+.volunteer-task-table__row > div small {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-text-muted);
+  font-size: 8px;
+}
+
+.volunteer-task-table__row > span:not(
+  .volunteer-task-priority
+) {
+  color: var(--color-text-secondary);
+}
+
+.volunteer-task-priority {
+  width: max-content;
+  min-width: 48px;
+  min-height: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.volunteer-task-priority--high {
+  color: #b42318;
+  background: #fee4e2;
+}
+
+.volunteer-task-priority--medium {
+  color: #946200;
+  background: #fef0c7;
+}
+
+.volunteer-task-priority--low {
+  color: #344054;
+  background: #f2f4f7;
+}
+
+.volunteer-dashboard__empty,
+.volunteer-dashboard__identity-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+  text-align: center;
+}
+
+.volunteer-dashboard__empty {
+  min-height: 250px;
+  padding: 30px;
+  color: var(--color-text-muted);
+}
+
+.volunteer-dashboard__empty--compact {
+  min-height: 180px;
+}
+
+.volunteer-dashboard__empty svg,
+.volunteer-dashboard__identity-state svg {
+  color: var(--color-primary);
+}
+
+.volunteer-dashboard__empty strong,
+.volunteer-dashboard__identity-state h2 {
+  color: var(--color-text-primary);
+  font-size: 12px;
+}
+
+.volunteer-dashboard__empty p,
+.volunteer-dashboard__identity-state p {
+  max-width: 360px;
+  color: var(--color-text-muted);
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.volunteer-dashboard__identity-state {
+  max-width: 700px;
+  min-height: 300px;
+  margin: 35px auto 0;
+}
+
+.volunteer-task-cards {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .volunteer-dashboard {
+    padding: 30px 24px 50px;
+  }
+
+  .volunteer-dashboard__summary {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-dashboard__metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .volunteer-dashboard {
+    padding: 24px 16px 40px;
+  }
+
+  .volunteer-dashboard__header {
+    flex-direction: column;
+  }
+
+  .volunteer-dashboard__account {
+    width: 100%;
+  }
+
+  .volunteer-dashboard__account button {
+    margin-left: auto;
+  }
+
+  .volunteer-dashboard__filters {
+    overflow-x: auto;
+  }
+
+  .volunteer-dashboard__filters button {
+    flex: 0 0 auto;
+  }
+
+  .volunteer-task-table {
+    display: none;
+  }
+
+  .volunteer-task-cards {
+    display: grid;
+  }
+
+  .volunteer-task-cards > article {
+    padding: 17px;
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+
+  .volunteer-task-cards > article:last-child {
+    border-bottom: 0;
+  }
+
+  .volunteer-task-card__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .volunteer-task-card__top small {
+    color: var(--color-text-muted);
+    font-size: 8px;
+  }
+
+  .volunteer-task-card__top h3 {
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+  .volunteer-task-card__meta {
+    display: grid;
+    gap: 7px;
+    margin-top: 13px;
+  }
+
+  .volunteer-task-card__meta span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-text-secondary);
+    font-size: 9px;
+  }
+
+  .volunteer-task-cards article > p {
+    margin: 13px 0;
+    color: var(--color-text-secondary);
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  .volunteer-task-cards article >
+    .volunteer-task-priority {
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 520px) {
+  .volunteer-dashboard__header h1 {
+    font-size: 25px;
+  }
+
+  .volunteer-dashboard__intro {
+    line-height: 1.6;
+  }
+
+  .volunteer-dashboard__metrics {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .volunteer-dashboard-metric {
+    min-height: 80px;
+    padding: 13px;
+  }
+
+  .volunteer-dashboard-metric__icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .volunteer-dashboard__account > div {
+    min-width: 0;
+  }
+
+  .volunteer-dashboard__account strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .volunteer-dashboard__account button span {
+    display: none;
+  }
+}
+
+
+.volunteer-task-action {
+  display: flex;
+  align-items: center;
+}
+
+.volunteer-task-action button,
+.volunteer-task-card__action button {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  color: #ffffff;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 8px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.volunteer-task-action button:hover,
+.volunteer-task-card__action button:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.volunteer-task-action__complete {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-primary);
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.volunteer-task-card__action {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .volunteer-task-card__action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    padding-top: 13px;
+    border-top: 1px solid var(--color-border-soft);
+  }
+
+  .volunteer-task-card__action button {
+    min-height: 36px;
+    padding: 0 15px;
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   Volunteer attendance
+   ========================================================= */
+
+.volunteer-task-action {
+  gap: 8px;
+}
+
+.volunteer-task-action .volunteer-attendance-button,
+.volunteer-task-card__action .volunteer-attendance-button {
+  color: #087a55;
+  background: #e7f8ef;
+  border-color: #9fe5c6;
+}
+
+.volunteer-task-action .volunteer-attendance-button:hover,
+.volunteer-task-card__action .volunteer-attendance-button:hover {
+  color: #ffffff;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.volunteer-attendance-active {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-primary);
+  font-size: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .volunteer-task-card__action {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .volunteer-attendance-active {
+    min-height: 36px;
+    padding: 0 10px;
+    background: #e7f8ef;
+    border-radius: 6px;
+  }
+}

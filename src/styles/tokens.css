@@ -1,0 +1,132 @@
+﻿:root {
+  /* =========================================================
+     FIN BRAND
+     ========================================================= */
+  --fin-primary: #00965e;
+  --fin-primary-hover: #008452;
+  --fin-primary-dark: #006b45;
+  --fin-primary-soft: #c9f7df;
+  --fin-primary-soft-2: #e7f8ef;
+
+  /* =========================================================
+     SURFACES
+     Figma reference background: #F5F7F5
+     ========================================================= */
+  --fin-background: #f5f7f5;
+  --fin-surface: #ffffff;
+  --fin-surface-muted: #f2f3f3;
+
+  /* =========================================================
+     TYPOGRAPHY
+     ========================================================= */
+  --fin-text: #111827;
+  --fin-text-secondary: #5f6670;
+  --fin-text-muted: #858b93;
+
+  /* =========================================================
+     BORDERS
+     ========================================================= */
+  --fin-border: #dde1df;
+  --fin-border-soft: #e8ebe9;
+  --fin-border-strong: #c7ccd1;
+
+  /* =========================================================
+     SEMANTIC STATUS
+     ========================================================= */
+  --fin-success-bg: #c9f7df;
+  --fin-success-text: #087456;
+
+  --fin-warning-bg: #fff1b8;
+  --fin-warning-text: #a96513;
+
+  --fin-neutral-status-bg: #f0f1f2;
+  --fin-neutral-status-text: #59616c;
+
+  --fin-danger-bg: #fee4e2;
+  --fin-danger-text: #b42318;
+
+  /* =========================================================
+     TYPOGRAPHY
+     ========================================================= */
+  --fin-font:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  /* =========================================================
+     RADIUS
+     ========================================================= */
+  --fin-radius-sm: 8px;
+  --fin-radius-md: 12px;
+  --fin-radius-lg: 18px;
+  --fin-radius-pill: 999px;
+
+  /* =========================================================
+     SHADOW
+     ========================================================= */
+  --fin-shadow-card:
+    0 1px 2px rgba(16, 24, 40, 0.03),
+    0 2px 7px rgba(16, 24, 40, 0.04);
+
+  /* =========================================================
+     LAYOUT
+     Reference frame: 1728 × 1117
+     ========================================================= */
+  --fin-reference-width: 1728px;
+  --fin-reference-height: 1117px;
+
+  --fin-sidebar-width: 286px;
+  --fin-content-max-width: 1460px;
+
+  /* =========================================================
+     LEGACY ALIASES
+     Keep existing screens operational while refactoring.
+     ========================================================= */
+  --color-primary: var(--fin-primary);
+  --color-primary-hover: var(--fin-primary-hover);
+  --color-primary-soft: var(--fin-primary-soft);
+
+  --color-app-background: var(--fin-background);
+  --color-surface: var(--fin-surface);
+  --color-surface-muted: var(--fin-surface-muted);
+
+  --color-text-primary: var(--fin-text);
+  --color-text-secondary: var(--fin-text-secondary);
+  --color-text-muted: var(--fin-text-muted);
+
+  --color-border: var(--fin-border-strong);
+  --color-border-soft: var(--fin-border);
+
+  --color-success-background: var(--fin-success-bg);
+  --color-success-text: var(--fin-success-text);
+  --color-warning-background: var(--fin-warning-bg);
+  --color-warning-text: var(--fin-warning-text);
+  --color-danger-background: var(--fin-danger-bg);
+  --color-danger-text: var(--fin-danger-text);
+
+  --font-family: var(--fin-font);
+
+  --radius-sm: var(--fin-radius-sm);
+  --radius-md: var(--fin-radius-md);
+  --radius-lg: var(--fin-radius-lg);
+
+  --shadow-card: var(--fin-shadow-card);
+
+  --sidebar-width: var(--fin-sidebar-width);
+  --content-max-width: var(--fin-content-max-width);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+}

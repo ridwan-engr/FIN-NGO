@@ -1,0 +1,503 @@
+﻿.volunteer-profile {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 34px 42px 70px;
+}
+
+.volunteer-profile__breadcrumb {
+  margin-bottom: 18px;
+  color: var(--color-text-muted);
+  font-size: 10px;
+}
+
+.volunteer-profile__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: 0;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.volunteer-profile__back:hover {
+  color: var(--color-primary);
+}
+
+.volunteer-profile__hero {
+  margin-top: 24px;
+  padding: 0 0 25px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.volunteer-profile__identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.volunteer-profile__avatar {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--color-primary);
+  background: #d9f7e9;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.volunteer-profile__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.volunteer-profile__title h1 {
+  color: var(--color-text-primary);
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.volunteer-profile__identity p {
+  margin-top: 6px;
+  color: var(--color-text-muted);
+  font-size: 9px;
+}
+
+.volunteer-profile__identity > div > span {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-text-secondary);
+  font-size: 10px;
+}
+
+.volunteer-profile__metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 22px;
+}
+
+.volunteer-profile__metrics article {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px;
+  background: #fff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.volunteer-profile__metric-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-radius: 50%;
+}
+
+.volunteer-profile__metrics small {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: 9px;
+}
+
+.volunteer-profile__metrics strong {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-text-primary);
+  font-size: 20px;
+}
+
+.volunteer-profile__grid {
+  display: grid;
+  grid-template-columns: 1.45fr 0.75fr;
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.volunteer-profile-card {
+  margin-top: 18px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.volunteer-profile__grid .volunteer-profile-card {
+  margin-top: 0;
+}
+
+.volunteer-profile-card > header {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 19px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.volunteer-profile-card header h2 {
+  color: var(--color-text-primary);
+  font-size: 12px;
+}
+
+.volunteer-profile-card header p {
+  margin-top: 5px;
+  color: var(--color-text-muted);
+  font-size: 8px;
+}
+
+.volunteer-profile-card header > strong,
+.volunteer-profile-card header > span {
+  color: var(--color-text-secondary);
+  font-size: 9px;
+}
+
+.volunteer-profile__information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.volunteer-profile__information > div {
+  min-width: 0;
+  padding: 17px 19px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.volunteer-profile__information > div:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.volunteer-profile__information span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-text-muted);
+  font-size: 8px;
+}
+
+.volunteer-profile__information strong {
+  display: block;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+  color: var(--color-text-primary);
+  font-size: 10px;
+}
+
+.volunteer-profile__skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 7px;
+  min-height: 116px;
+  padding: 19px;
+}
+
+.volunteer-profile__skills span {
+  height: 27px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  color: var(--color-text-secondary);
+  background: #f4f6f7;
+  border-radius: 999px;
+  font-size: 8px;
+}
+
+.volunteer-profile__skills p {
+  color: var(--color-text-muted);
+  font-size: 9px;
+}
+
+.volunteer-profile__project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.volunteer-profile__project-list button {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 14px 19px;
+  text-align: left;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid var(--color-border-soft);
+  cursor: pointer;
+}
+
+.volunteer-profile__project-list button:nth-child(odd) {
+  border-right: 1px solid var(--color-border-soft);
+}
+
+.volunteer-profile__project-list button:hover {
+  background: #fafcfb;
+}
+
+.volunteer-profile__project-list button > span {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--color-primary);
+  background: #e6f8ef;
+  border-radius: 8px;
+}
+
+.volunteer-profile__project-list button > div {
+  min-width: 0;
+  flex: 1;
+}
+
+.volunteer-profile__project-list strong {
+  display: block;
+  color: var(--color-text-primary);
+  font-size: 10px;
+}
+
+.volunteer-profile__project-list small {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-text-muted);
+  font-size: 8px;
+}
+
+.volunteer-profile-task-table__header,
+.volunteer-profile-task-table__row {
+  display: grid;
+  grid-template-columns:
+    minmax(220px, 1.5fr)
+    minmax(150px, 1fr)
+    110px
+    90px
+    105px;
+  align-items: center;
+  column-gap: 15px;
+  padding: 0 19px;
+}
+
+.volunteer-profile-task-table__header {
+  min-height: 38px;
+  color: var(--color-text-secondary);
+  background: #f6f7f7;
+  border-bottom: 1px solid var(--color-border-soft);
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.volunteer-profile-task-table__row {
+  min-height: 66px;
+  border-bottom: 1px solid var(--color-border-soft);
+  font-size: 9px;
+}
+
+.volunteer-profile-task-table__row:last-child {
+  border-bottom: 0;
+}
+
+.volunteer-profile-task-table__row > div strong {
+  display: block;
+  color: var(--color-text-primary);
+  font-size: 10px;
+}
+
+.volunteer-profile-task-table__row > div small {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-text-muted);
+  font-size: 8px;
+}
+
+.volunteer-profile-task-table__row > span:not(
+  .volunteer-profile__priority
+) {
+  color: var(--color-text-secondary);
+}
+
+.volunteer-profile__priority {
+  width: max-content;
+  min-width: 48px;
+  min-height: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.volunteer-profile__priority--high {
+  color: #b42318;
+  background: #fee4e2;
+}
+
+.volunteer-profile__priority--medium {
+  color: #946200;
+  background: #fef0c7;
+}
+
+.volunteer-profile__priority--low {
+  color: #344054;
+  background: #f2f4f7;
+}
+
+.volunteer-profile__empty,
+.volunteer-profile__not-found {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.volunteer-profile__empty strong,
+.volunteer-profile__not-found h1 {
+  color: var(--color-text-primary);
+  font-size: 12px;
+}
+
+.volunteer-profile__empty span,
+.volunteer-profile__not-found p {
+  font-size: 9px;
+}
+
+.volunteer-profile__not-found {
+  margin-top: 25px;
+  min-height: 320px;
+  background: #fff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+}
+
+.volunteer-profile-task-cards {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .volunteer-profile {
+    max-width: none;
+    padding: 26px 24px 60px;
+  }
+
+  .volunteer-profile__metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .volunteer-profile__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .volunteer-profile__project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-profile__project-list button:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .volunteer-profile-task-table {
+    display: none;
+  }
+
+  .volunteer-profile-task-cards {
+    display: grid;
+  }
+
+  .volunteer-profile-task-cards > article {
+    padding: 16px;
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+
+  .volunteer-profile-task-cards > article:last-child {
+    border-bottom: 0;
+  }
+
+  .volunteer-profile-task-cards > article > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .volunteer-profile-task-cards strong {
+    color: var(--color-text-primary);
+    font-size: 10px;
+  }
+
+  .volunteer-profile-task-cards span,
+  .volunteer-profile-task-cards small {
+    display: block;
+    margin-top: 8px;
+    color: var(--color-text-secondary);
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 520px) {
+  .volunteer-profile {
+    padding: 20px 16px 44px;
+  }
+
+  .volunteer-profile__title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .volunteer-profile__title h1 {
+    font-size: 22px;
+  }
+
+  .volunteer-profile__metrics {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .volunteer-profile__metrics article {
+    min-height: 82px;
+    padding: 13px;
+  }
+
+  .volunteer-profile__metric-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .volunteer-profile__information {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-profile__information > div {
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+
+  .volunteer-profile__information > div:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+
+  .volunteer-profile__information > div:last-child {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,30 @@
+﻿.coordinator-layout {
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--fin-background);
+}
+
+.coordinator-layout__workspace {
+  width: auto;
+  min-width: 0;
+  min-height: 100vh;
+
+  margin-left: clamp(240px, 16.6vw, 286px);
+
+  background: var(--fin-background);
+}
+
+@media (max-width: 899px) {
+  .coordinator-layout__workspace {
+    margin-left: 0;
+
+    padding-bottom: 104px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coordinator-layout__workspace {
+    padding-bottom: 92px;
+  }
+}

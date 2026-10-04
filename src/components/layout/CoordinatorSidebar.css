@@ -1,0 +1,372 @@
+﻿.coordinator-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+
+  width: clamp(240px, 16.6vw, 286px);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 26px 18px 24px;
+
+  overflow-y: auto;
+
+  background: var(--fin-surface);
+
+  border-right: 1px solid var(--fin-border);
+
+  z-index: 40;
+}
+
+.coordinator-sidebar__brand {
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 4px 8px 18px;
+}
+
+.coordinator-sidebar__brand-mark {
+  width: 52px;
+  height: 52px;
+
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  color: #ffffff;
+  background: var(--fin-primary);
+
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.coordinator-sidebar__brand-copy {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.05;
+}
+
+.coordinator-sidebar__brand-copy strong {
+  color: var(--fin-text);
+
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.coordinator-sidebar__brand-copy .coordinator-sidebar__network {
+  color: var(--fin-primary);
+
+  margin-top: 2px;
+}
+
+.coordinator-sidebar__brand-copy small {
+  margin-top: 7px;
+
+  color: var(--fin-text-muted);
+
+  font-size: 6px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.coordinator-sidebar__divider {
+  height: 1px;
+
+  margin: 0 0 10px;
+
+  background: var(--fin-border-soft);
+}
+
+.coordinator-sidebar__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding-top: 2px;
+}
+
+.coordinator-sidebar__link {
+  min-height: 46px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 0 12px;
+
+  color: var(--fin-text-secondary);
+  background: transparent;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 450;
+
+  text-decoration: none;
+
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.coordinator-sidebar__link-icon {
+  flex: 0 0 auto;
+
+  color: #727a84;
+}
+
+.coordinator-sidebar__link:hover {
+  color: var(--fin-primary-dark);
+  background: #f5faf7;
+}
+
+.coordinator-sidebar__link--active {
+  color: #ffffff;
+  background: var(--fin-primary);
+
+  font-weight: 600;
+}
+
+.coordinator-sidebar__link--active:hover {
+  color: #ffffff;
+  background: var(--fin-primary-hover);
+}
+
+.coordinator-sidebar__link--active
+.coordinator-sidebar__link-icon {
+  color: #ffffff;
+}
+
+.coordinator-sidebar__footer {
+  margin-top: auto;
+
+  padding: 0 4px;
+}
+
+.coordinator-sidebar__footer-divider {
+  height: 1px;
+
+  margin-bottom: 30px;
+
+  background: var(--fin-border);
+}
+
+.coordinator-sidebar__role {
+  display: block;
+
+  margin-left: 42px;
+  margin-bottom: 14px;
+
+  color: var(--fin-text);
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.coordinator-sidebar__signout {
+  min-width: 108px;
+  min-height: 34px;
+
+  margin-left: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 0 16px;
+
+  color: var(--fin-text-secondary);
+  background: #f1f2ef;
+
+  border: 1px solid #ece7c8;
+  border-radius: var(--fin-radius-pill);
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.coordinator-sidebar__signout:hover {
+  color: var(--fin-danger-text);
+  background: var(--fin-danger-bg);
+  border-color: #fecdca;
+}
+
+@media (max-width: 899px) {
+  .coordinator-sidebar {
+    display: none;
+  }
+}
+
+/* =========================================================
+   FIN OFFICIAL BRAND MARK
+   ========================================================= */
+
+.coordinator-sidebar__brand-mark {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 52px;
+
+  padding: 0;
+
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+
+  overflow: visible;
+}
+
+.coordinator-sidebar__logo {
+  display: block;
+
+  width: 52px;
+  height: 52px;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+/* =========================================================
+   FIN BRAND LOCKUP — FIGMA FIDELITY
+   ========================================================= */
+
+.coordinator-sidebar__brand {
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 4px 8px 18px;
+
+  overflow: visible;
+}
+
+.coordinator-sidebar__brand > .coordinator-sidebar__logo {
+  display: block;
+
+  width: 172px;
+  height: auto;
+  max-height: 68px;
+
+  object-fit: contain;
+  object-position: left center;
+
+  flex: 0 0 auto;
+}
+
+/* Old split-brand elements are no longer used. */
+.coordinator-sidebar__brand-mark,
+.coordinator-sidebar__brand-copy {
+  display: none;
+}
+
+/* =========================================================
+   FIN OFFICIAL COMPACT BRAND LOCKUP — FINAL
+   ========================================================= */
+
+.coordinator-sidebar__brand {
+  width: 100%;
+  min-height: 104px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+
+  padding: 10px 8px 18px;
+
+  overflow: visible;
+}
+
+.coordinator-sidebar__brand > .coordinator-sidebar__logo {
+  display: block;
+
+  width: 54px;
+  height: 68px;
+
+  flex: 0 0 54px;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+.coordinator-sidebar__brand .coordinator-sidebar__brand-copy {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  line-height: 1;
+}
+
+.coordinator-sidebar__brand-name {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.coordinator-sidebar__brand-name strong {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.05;
+
+  white-space: nowrap;
+}
+
+.coordinator-sidebar__brand-name strong:last-child {
+  color: var(--fin-primary);
+}
+
+.coordinator-sidebar__brand .coordinator-sidebar__brand-copy small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #737b84;
+
+  font-size: 5px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}

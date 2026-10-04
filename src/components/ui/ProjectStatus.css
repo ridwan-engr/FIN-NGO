@@ -1,0 +1,42 @@
+﻿.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.project-status__dot {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+}
+
+.project-status--active {
+  color: #087a55;
+  background: #e5f8ef;
+}
+
+.project-status--planning {
+  color: #805f16;
+  background: #fff4d5;
+}
+
+.project-status--completed {
+  color: #475467;
+  background: #eef1f3;
+}
+
+.project-status--on-hold {
+  color: #b42318;
+  background: #fee4e2;
+}

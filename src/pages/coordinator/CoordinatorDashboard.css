@@ -1,0 +1,685 @@
+﻿.fin-dashboard {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 42px 48px 28px;
+
+  color: var(--fin-text);
+  background: var(--fin-background);
+}
+
+.fin-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 64px;
+
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid var(--fin-border);
+}
+
+.fin-dashboard-header__identity h1 {
+  margin: 0;
+
+  color: var(--fin-text);
+
+  font-size: clamp(25px, 2vw, 34px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+}
+
+.fin-dashboard-header__meta {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.fin-dashboard-header__meta span {
+  min-width: 205px;
+
+  padding: 9px 24px;
+
+  color: var(--fin-primary-dark);
+  background: var(--fin-primary-soft);
+
+  border-radius: var(--fin-radius-pill);
+
+  font-size: 13px;
+  text-align: center;
+}
+
+.fin-dashboard-contribution {
+  margin-top: 10px;
+}
+
+.fin-dashboard-contribution > h2,
+.fin-attention > h2,
+.fin-mobile-section-title {
+  margin: 0;
+
+  color: var(--fin-text);
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fin-dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+
+  margin-top: 12px;
+}
+
+.fin-dashboard-metrics--mobile {
+  display: none;
+}
+
+.fin-dashboard-metric {
+  min-height: 124px;
+
+  padding: 24px 20px;
+
+  background: var(--fin-surface);
+
+  border: 1px solid var(--fin-border);
+  border-radius: var(--fin-radius-md);
+
+  box-shadow: var(--fin-shadow-card);
+}
+
+.fin-dashboard-metric span {
+  display: block;
+
+  color: var(--fin-text-muted);
+
+  font-size: 14px;
+}
+
+.fin-dashboard-metric strong {
+  display: block;
+
+  margin-top: 15px;
+
+  color: var(--fin-text);
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.fin-best-project-section {
+  margin-top: 32px;
+}
+
+.fin-mobile-section-title {
+  display: none;
+}
+
+.fin-best-project {
+  width: min(100%, 825px);
+
+  padding: 28px 30px 20px;
+
+  background: var(--fin-surface);
+
+  border: 1px solid var(--fin-border);
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.fin-best-project:hover {
+  transform: translateY(-1px);
+
+  box-shadow: var(--fin-shadow-card);
+}
+
+.fin-best-project__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fin-dashboard-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 112px;
+  min-height: 34px;
+
+  padding: 6px 16px;
+
+  border-radius: var(--fin-radius-pill);
+
+  font-size: 13px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.fin-dashboard-status--completed {
+  color: var(--fin-success-text);
+  background: var(--fin-success-bg);
+}
+
+.fin-dashboard-status--pending {
+  color: var(--fin-warning-text);
+  background: var(--fin-warning-bg);
+}
+
+.fin-dashboard-status--in-progress {
+  color: var(--fin-neutral-status-text);
+  background: var(--fin-neutral-status-bg);
+}
+
+.fin-best-project__rating {
+  display: flex;
+  gap: 1px;
+
+  color: #f7a600;
+
+  font-size: 34px;
+  line-height: 1;
+}
+
+.fin-best-project h2 {
+  margin: 18px 0 0;
+
+  color: var(--fin-text);
+
+  font-size: 29px;
+  font-weight: 650;
+  letter-spacing: -0.6px;
+}
+
+.fin-best-project__summary {
+  margin: 7px 0 0;
+
+  color: var(--fin-text-secondary);
+
+  font-size: 18px;
+}
+
+.fin-best-project__progress-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 22px;
+}
+
+.fin-best-project__progress {
+  flex: 1;
+
+  height: 13px;
+
+  overflow: hidden;
+
+  background: #e6e9e7;
+
+  border-radius: var(--fin-radius-pill);
+}
+
+.fin-best-project__progress span {
+  display: block;
+
+  height: 100%;
+
+  background: var(--fin-primary);
+
+  border-radius: inherit;
+}
+
+.fin-best-project__progress-row strong {
+  color: var(--fin-text-secondary);
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.fin-best-project__review {
+  margin: 12px 0 0;
+
+  color: var(--fin-text);
+
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.fin-attention {
+  margin-top: 26px;
+
+  padding: 22px 28px 18px;
+
+  background: var(--fin-surface);
+
+  border: 1px solid var(--fin-border);
+  border-radius: var(--fin-radius-md);
+
+  box-shadow: var(--fin-shadow-card);
+}
+
+.fin-attention__desktop {
+  margin-top: 25px;
+
+  overflow-x: auto;
+}
+
+.fin-attention table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+}
+
+.fin-attention th,
+.fin-attention td {
+  padding: 12px 8px;
+
+  border-bottom: 1px solid var(--fin-border-soft);
+
+  color: var(--fin-text-secondary);
+
+  font-size: 12px;
+  text-align: left;
+}
+
+.fin-attention th {
+  color: var(--fin-text-muted);
+
+  font-weight: 500;
+}
+
+.fin-attention tbody tr {
+  cursor: pointer;
+}
+
+.fin-attention tbody tr:hover {
+  background: #fafbfa;
+}
+
+.fin-attention td:last-child,
+.fin-attention th:last-child {
+  text-align: center;
+}
+
+.fin-attention td .fin-dashboard-status {
+  min-width: 106px;
+  min-height: 30px;
+
+  font-size: 11px;
+}
+
+.fin-attention__mobile {
+  display: none;
+}
+
+.fin-dashboard__workspace {
+  margin-top: 48px;
+
+  color: var(--fin-text-muted);
+
+  font-size: 12px;
+  letter-spacing: 0.15px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .fin-dashboard {
+    padding: 32px;
+  }
+
+  .fin-dashboard-header__meta {
+    gap: 12px;
+  }
+
+  .fin-dashboard-header__meta span {
+    min-width: 155px;
+  }
+
+  .fin-dashboard-metrics {
+    gap: 16px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 899px) {
+  .fin-dashboard {
+    min-height: 100dvh;
+
+    padding:
+      28px
+      28px
+      132px;
+  }
+
+  .fin-dashboard-header {
+    display: block;
+
+    padding-bottom: 20px;
+  }
+
+  .fin-dashboard-header__identity h1 {
+    font-size: clamp(31px, 8vw, 42px);
+    line-height: 1.06;
+  }
+
+  .fin-dashboard-header__meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+
+    margin-top: 26px;
+  }
+
+  .fin-dashboard-header__meta span {
+    min-width: 0;
+
+    padding: 10px 12px;
+
+    font-size: 16px;
+  }
+
+  .fin-dashboard-contribution {
+    margin-top: 56px;
+  }
+
+  .fin-dashboard-contribution > h2,
+  .fin-attention > h2,
+  .fin-mobile-section-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .fin-dashboard-metrics--desktop {
+    display: none;
+  }
+
+  .fin-dashboard-metrics--mobile {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+
+    margin-top: 20px;
+  }
+
+  .fin-dashboard-metric {
+    min-height: 145px;
+
+    padding: 22px 10px;
+
+    text-align: center;
+
+    border-radius: 18px;
+  }
+
+  .fin-dashboard-metric span {
+    min-height: 45px;
+
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .fin-dashboard-metric strong {
+    margin-top: 15px;
+
+    font-size: 35px;
+  }
+
+  .fin-best-project-section {
+    margin-top: 60px;
+  }
+
+  .fin-mobile-section-title {
+    display: block;
+
+    margin-bottom: 18px;
+  }
+
+  .fin-best-project {
+    width: 100%;
+
+    padding: 24px;
+
+    border-radius: 18px;
+  }
+
+  .fin-dashboard-status {
+    min-width: auto;
+    min-height: 36px;
+
+    padding: 6px 15px;
+
+    font-size: 16px;
+  }
+
+  .fin-best-project__rating {
+    font-size: 28px;
+  }
+
+  .fin-best-project h2 {
+    margin-top: 18px;
+
+    font-size: 26px;
+  }
+
+  .fin-best-project__summary {
+    font-size: 17px;
+  }
+
+  .fin-best-project__progress-row {
+    gap: 14px;
+  }
+
+  .fin-best-project__progress {
+    height: 11px;
+  }
+
+  .fin-best-project__progress-row strong {
+    font-size: 17px;
+  }
+
+  .fin-best-project__review {
+    margin-top: 20px;
+
+    font-size: 17px;
+  }
+
+  .fin-attention {
+    margin-top: 36px;
+    padding: 0;
+
+    background: transparent;
+
+    border: 0;
+    border-radius: 0;
+
+    box-shadow: none;
+  }
+
+  .fin-attention__desktop {
+    display: none;
+  }
+
+  .fin-attention__mobile {
+    display: grid;
+    gap: 12px;
+
+    margin-top: 28px;
+  }
+
+  .fin-task-card {
+    width: 100%;
+    min-height: 104px;
+
+    display: grid;
+    grid-template-columns: 66px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+
+    padding: 14px 18px;
+
+    color: inherit;
+    background: var(--fin-surface);
+
+    border: 1px solid var(--fin-border);
+    border-radius: 14px;
+
+    font: inherit;
+    text-align: left;
+
+    cursor: pointer;
+  }
+
+  .fin-task-card__avatar {
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    color: #fff;
+    background: var(--fin-primary);
+
+    border-radius: 50%;
+
+    font-size: 17px;
+  }
+
+  .fin-task-card__content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .fin-task-card__content strong {
+    overflow: hidden;
+
+    color: var(--fin-text);
+
+    font-size: 18px;
+    font-weight: 500;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .fin-task-card__content small {
+    overflow: hidden;
+
+    color: var(--fin-text-secondary);
+
+    font-size: 15px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .fin-task-card .fin-dashboard-status {
+    font-size: 15px;
+  }
+
+  .fin-dashboard__workspace {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .fin-dashboard {
+    padding:
+      24px
+      18px
+      120px;
+  }
+
+  .fin-dashboard-header__identity h1 {
+    font-size: 33px;
+  }
+
+  .fin-dashboard-header__meta {
+    gap: 14px;
+  }
+
+  .fin-dashboard-header__meta span {
+    font-size: 14px;
+  }
+
+  .fin-dashboard-contribution {
+    margin-top: 48px;
+  }
+
+  .fin-dashboard-contribution > h2,
+  .fin-attention > h2,
+  .fin-mobile-section-title {
+    font-size: 24px;
+  }
+
+  .fin-dashboard-metrics--mobile {
+    gap: 10px;
+  }
+
+  .fin-dashboard-metric {
+    min-height: 125px;
+
+    padding: 18px 7px;
+  }
+
+  .fin-dashboard-metric span {
+    font-size: 13px;
+  }
+
+  .fin-dashboard-metric strong {
+    font-size: 30px;
+  }
+
+  .fin-best-project h2 {
+    font-size: 22px;
+  }
+
+  .fin-best-project__rating {
+    font-size: 22px;
+  }
+
+  .fin-task-card {
+    grid-template-columns: 54px minmax(0, 1fr) auto;
+
+    padding: 12px;
+  }
+
+  .fin-task-card__avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .fin-task-card__content strong {
+    font-size: 15px;
+  }
+
+  .fin-task-card__content small {
+    font-size: 13px;
+  }
+
+  .fin-task-card .fin-dashboard-status {
+    padding: 6px 10px;
+
+    font-size: 12px;
+  }
+}
