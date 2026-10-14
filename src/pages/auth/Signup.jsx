@@ -1,6 +1,5 @@
 ﻿import { useState } from "react";
 import {
-  Building2,
   Users,
   ClipboardList,
   UserRound,
@@ -354,4 +353,5 @@ export default function Signup() {
     </main>
   );
 }
+
 
