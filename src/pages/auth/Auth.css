@@ -308,15 +308,11 @@
 }
 
 .auth-error {
-  padding: 11px 13px;
+  box-sizing: border-box;
+}
 
-  color: #b42318;
-  background: #fef3f2;
-
-  border: 1px solid #fecdca;
-  border-radius: 7px;
-
-  font-size: 11px;
+.auth-error[role="alert"] {
+  display: block;
 }
 
 .auth-switch {

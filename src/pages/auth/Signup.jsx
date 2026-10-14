@@ -22,11 +22,6 @@ import "./Auth.css";
 
 const roles = [
   {
-    id: "ngo",
-    label: "NGO",
-    icon: Building2,
-  },
-  {
     id: "volunteer",
     label: "Volunteer",
     icon: Users,
@@ -359,3 +354,4 @@ export default function Signup() {
     </main>
   );
 }
+
