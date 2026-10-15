@@ -23,7 +23,7 @@ import useAuth from "../../hooks/useAuth.js";
 import finLogo from "../../assets/branding/fin-logo.png";
 import loginIllustration from "../../assets/images/login-illustration.png";
 import googleIcon from "../../assets/google/flat-color-icons_google.png";
-import appleIcon from "../../assets/apple/vector.png";
+import appleIcon from "../../assets/apple/Vector.png";
 
 import "./Auth.css";
 import "./LoginPage.css";
