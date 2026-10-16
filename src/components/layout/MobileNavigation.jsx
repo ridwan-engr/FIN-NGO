@@ -2,8 +2,9 @@
   House,
   Accessibility,
   ListTodo,
-  CalendarCheck2,
-  NotebookPen,
+  CalendarCheck,
+  ChartNoAxesColumn,
+  Settings,
 } from "lucide-react";
 
 import { NavLink } from "react-router-dom";
@@ -29,12 +30,17 @@ const navigation = [
   {
     label: "Attendance",
     path: "/coordinator/attendance",
-    icon: CalendarCheck2,
+    icon: CalendarCheck,
   },
   {
     label: "Reports",
     path: "/coordinator/reports",
-    icon: NotebookPen,
+    icon: ChartNoAxesColumn,
+  },
+  {
+    label: "Settings",
+    path: "/coordinator/settings",
+    icon: Settings,
   },
 ];
 
@@ -51,9 +57,7 @@ export default function MobileNavigation() {
           className={({ isActive }) =>
             [
               "mobile-navigation__item",
-              isActive
-                ? "mobile-navigation__item--active"
-                : "",
+              isActive ? "mobile-navigation__item--active" : "",
             ]
               .filter(Boolean)
               .join(" ")
@@ -61,15 +65,12 @@ export default function MobileNavigation() {
         >
           <Icon
             className="mobile-navigation__icon"
-            size={26}
+            size={23}
             strokeWidth={1.8}
           />
-
           <span>{label}</span>
         </NavLink>
       ))}
     </nav>
   );
 }
-
-

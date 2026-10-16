@@ -1,16 +1,22 @@
 ﻿export const USER_ROLES = Object.freeze({
+  ADMIN: "admin",
+  ADMINISTRATOR: "administrator",
   NGO: "ngo",
   VOLUNTEER: "volunteer",
   COORDINATOR: "coordinator",
 });
 
 export const ROLE_HOME_ROUTES = Object.freeze({
+  [USER_ROLES.ADMIN]: "/admin/overview",
+  [USER_ROLES.ADMINISTRATOR]: "/admin/overview",
   [USER_ROLES.NGO]: "/ngo/dashboard",
   [USER_ROLES.VOLUNTEER]: "/volunteer/dashboard",
   [USER_ROLES.COORDINATOR]: "/coordinator/dashboard",
 });
 
 export const ROLE_ROUTE_PREFIXES = Object.freeze({
+  [USER_ROLES.ADMIN]: "/admin",
+  [USER_ROLES.ADMINISTRATOR]: "/admin",
   [USER_ROLES.NGO]: "/ngo",
   [USER_ROLES.VOLUNTEER]: "/volunteer",
   [USER_ROLES.COORDINATOR]: "/coordinator",
