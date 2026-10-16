@@ -6,7 +6,7 @@
 
 import ProtectedRoute from "./components/auth/ProtectedRoute.jsx";
 import RoleGuard from "./components/auth/RoleGuard.jsx";
-import DevAdminPreview from "./pages/dev/DevAdminPreview.jsx";
+
 import CoordinatorLayout from "./layouts/CoordinatorLayout.jsx";
 
 import Login from "./pages/auth/Login.jsx";
@@ -28,6 +28,7 @@ import VolunteerProfile from "./pages/coordinator/VolunteerProfile.jsx";
 
 import {
   VolunteerLayout,
+  VolunteerHome,
   VolunteerProjects,
   VolunteerTasks,
   VolunteerParticipation,
@@ -35,7 +36,6 @@ import {
 } from "./pages/volunteer/VolunteerPages.jsx";
 
 import NgoDashboard from "./pages/ngo/NgoDashboard.jsx";
-import VolunteerDashboard from "./pages/volunteer/VolunteerDashboard.jsx";
 import AdminLayout from "./layouts/AdminLayout.jsx";
 import {
   AdminOverview,
@@ -79,7 +79,7 @@ export default function App() {
         {/* Volunteer */}
         <Route element={<RoleGuard allowedRoles={["volunteer"]} />}>
           <Route path="/volunteer" element={<Navigate to="/volunteer/dashboard" replace />} />
-          <Route path="/volunteer/dashboard" element={<VolunteerDashboard />} />
+          <Route path="/volunteer/dashboard" element={<VolunteerLayout><VolunteerHome /></VolunteerLayout>} />
           <Route path="/volunteer/projects" element={<VolunteerLayout><VolunteerProjects /></VolunteerLayout>} />
           <Route path="/volunteer/tasks" element={<VolunteerLayout><VolunteerTasks /></VolunteerLayout>} />
           <Route path="/volunteer/participation" element={<VolunteerLayout><VolunteerParticipation /></VolunteerLayout>} />
@@ -107,15 +107,7 @@ export default function App() {
         </Route>
       </Route>
 
-      {import.meta.env.DEV && (
-        <Route
-          path="/__dev/admin-preview"
-          element={<DevAdminPreview />}
-        />
-      )}
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );
 }
-
-
